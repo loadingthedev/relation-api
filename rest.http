@@ -1,0 +1,29 @@
+
+
+GET http://localhost:3000/api/products
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name" : "iphone 12+",
+    "price" : 9999,
+    "categoryId" : 1
+}
+
+###
+GET http://localhost:3000/api/products/2
+
+###
+DELETE http://localhost:3000/api/products/1
+
+###
+PATCH  http://localhost:3000/api/products/4
+Content-Type: application/json
+
+{ 
+    "name": "iPad Pro Max",
+    "price": 1299,
+    "categoryId" : 2
+}
